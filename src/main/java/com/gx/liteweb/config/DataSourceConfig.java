@@ -26,7 +26,7 @@ import java.util.Properties;
  **/
 
 @Configuration
-@PropertySource("classpath:/jdbc.properties")
+@PropertySource("classpath:jdbc.properties")
 @MapperScan(basePackages = {"com.gx.liteweb.dao"})
 public class DataSourceConfig {
     private static final Logger LOG = LoggerFactory.getLogger(DataSourceConfig.class);

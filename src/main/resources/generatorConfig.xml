@@ -22,7 +22,7 @@
         2，MyBatis3Simple：类似MyBatis3，只是不生成XXXBySample；
     introspectedColumnImpl：类全限定名，用于扩展MBG
     -->
-    <context id="dev" targetRuntime="MyBatis3">
+    <context id="env.dev" targetRuntime="MyBatis3">
         <!-- 生成的pojo，将implements Serializable -->
         <plugin type="org.mybatis.generator.plugins.SerializablePlugin"></plugin>
 
@@ -33,8 +33,8 @@
 
         <!--数据库连接的信息：驱动类、连接地址、用户名、密码 -->
         <jdbcConnection driverClass="com.mysql.jdbc.Driver"
-                        connectionURL="jdbc:mysql://47.97.205.190:3306/dev?createDatabaseIfNotExist=true&amp;characterEncoding=utf-8&amp;useUnicode=true"
-                        userId="dev"
+                        connectionURL="jdbc:mysql://47.97.205.190:3306/env.dev?createDatabaseIfNotExist=true&amp;characterEncoding=utf-8&amp;useUnicode=true"
+                        userId="env.dev"
                         password="gx123456">
         </jdbcConnection>
 
@@ -76,7 +76,7 @@
             tableName为对应的数据库表
             domainObjectName是要生成的实体类
             enable*ByExample是否生成 example类   -->
-        <table schema="dev" tableName="t_user"
+        <table schema="env.dev" tableName="t_user"
                domainObjectName="User"
                mapperName="UserDao"
                selectByExampleQueryId="false"
