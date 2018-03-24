@@ -207,6 +207,12 @@
                 <artifactId>mybatis-generator-maven-plugin</artifactId>
                 <version>1.3.5</version>
             </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-archetype-plugin</artifactId>
+                <version>3.0.1</version>
+            </plugin>
+
 
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
@@ -224,6 +230,7 @@
                 <version>3.0.2</version>
                 <configuration>
                     <encoding>UTF-8</encoding>
+                    <includeEmptyDirs>true</includeEmptyDirs>
                 </configuration>
             </plugin>
             <!-- Source attach plugin -->
